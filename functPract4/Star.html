@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var name = prompt("Nhap ten ngoi sao: ");
+    var star = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    var chomsao = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+function countingStar(name, star, chomsao) {
+    for(var i = 0; i < star.length; i++){
+        if (name === star[i]){
+           return chomsao[i];
+        }
+    }
+}
+var result = countingStar(name, star, chomsao);
+document.write(result);
+
+
+</script>
+</body>
+</html>

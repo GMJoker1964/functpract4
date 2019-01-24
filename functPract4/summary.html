@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sum</title>
+</head>
+<body>
+<script>
+    function sum(a,b) {
+        var result = 0;
+        if(a > b){
+            result = a+b;
+        } else {
+            result = "Negative";
+        }
+        return result;
+    }
+    var a = parseInt(prompt("a: "));
+    var b = parseInt(prompt("b: "));
+    var result = sum(a,b);
+    document.write(result);
+</script>
+</body>
+</html>
